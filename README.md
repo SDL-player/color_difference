@@ -9,3 +9,18 @@ Devido ao fato de que o Delta E utiliza valores em formato Lab para calcular, fo
 # Objetivo
 
 Apresentar uma opção mais rápida e simplificada para calcular essa diferença em Python.
+
+# Como Usar
+
+```python
+from color_diff import Color_Diff
+
+cor_1 = (9, 2, 0)
+
+cor_2 = (234, 56, 1)
+
+diff = Color_Diff(cor_1, cor_2)
+
+result = diff.calcule()
+```
+
