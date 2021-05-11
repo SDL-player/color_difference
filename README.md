@@ -13,7 +13,7 @@ cor_2 = (234, 56, 1)
 
 diff = Color_Diff(cor_1, cor_2)
 
-result = diff.calcule()
+result = diff.calculate()
 ```
 
 # Conversões
