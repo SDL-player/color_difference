@@ -163,7 +163,7 @@ class Color_Diff:
         self.a = a
         self.b = b
 
-    def calculus(self):
+    def calculate(self):
         color_a = rgb2srgb(self.a[0], self.a[1], self.a[2])
         color_b = rgb2srgb(self.b[0], self.b[1], self.b[2])
 
