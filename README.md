@@ -1,6 +1,6 @@
 # Color_Difference
 
-Color_Diff é um mini projeto que eu fiz utilizando Python para calcular o Delta E(CIE 2000) entre dois valores RGB, ou seja, calcular a diferença visual entre duas cores.
+Color_Difference é um mini projeto que eu fiz utilizando Python para calcular o Delta E(CIE 2000) entre dois valores RGB, ou seja, calcular a diferença visual entre duas cores.
 
 # Como Usar
 
