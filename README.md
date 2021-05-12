@@ -5,7 +5,7 @@ Color_Diff é um mini projeto que eu fiz utilizando Python para calcular o Delta
 # Como Usar
 
 ```python
-from color_diff import Color_Diff
+from color_difference import Color_Diff
 
 cor_1 = (9, 2, 0)
 
