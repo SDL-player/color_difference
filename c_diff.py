@@ -7,15 +7,15 @@ class Color_Diff:
         self.a = a
         self.b = b
 
-    def calculus(self):
+    def calculate(self):
         color_a = self.rgb2srgb(self.a[0], self.a[1], self.a[2])
         color_b = self.rgb2srgb(self.b[0], self.b[1], self.b[2])
 
         xyz_a = self.srgb2xyz(color_a)
         xyz_b = self.srgb2xyz(color_b)
 
-        lab_a = self.xyz2lab(xyz_a, function)
-        lab_b = self.xyz2lab(xyz_b, function)
+        lab_a = self.xyz2lab(xyz_a, self.function)
+        lab_b = self.xyz2lab(xyz_b, self.function)
 
         delta = self.delta_e_cie_2000(lab_a, lab_b)
         
