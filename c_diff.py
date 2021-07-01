@@ -172,8 +172,8 @@ class Color_Diff:
         xyz_a = srgb2xyz(color_a)
         xyz_b = srgb2xyz(color_b)
 
-        lab_a = xyz2lab(xyz_a, self.function)
-        lab_b = xyz2lab(xyz_b, self.function)
+        lab_a = xyz2lab(xyz_a, function)
+        lab_b = xyz2lab(xyz_b, function)
 
         delta = delta_e_cie_2000(lab_a, lab_b)
         
