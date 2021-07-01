@@ -33,7 +33,7 @@ class Color_Diff:
     
         else:
             return np.array([r / 255, g / 255, b / 255])
-    
+    @staticmethod
     @njit(nopython=True)
     def srgb2_new_srgb(srgb):
         srgb_new = np.array([0.0, 0.0, 0.0])
