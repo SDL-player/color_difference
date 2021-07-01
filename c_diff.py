@@ -2,10 +2,6 @@ from numba import njit
 import numpy as np
 
 
-from numba import njit
-import numpy as np
-
-
 class Color_Diff:
     def __init__(self, a, b):
         self.a = a
