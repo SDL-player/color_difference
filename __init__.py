@@ -16,7 +16,7 @@ delta_cie_2000_.restype = c_double
         
 def color_diff(a, b):
     
-    """Calculate the delta_cie_2000 between two values in rgb format."""
+    """Calculate the delta_e_cie_2000 between two values in rgb format."""
         
     arr_ = (c_double * len(self.a))(*self.a)
         
