@@ -26,4 +26,4 @@ Apresentar uma opção mais rápida e simplificada para calcular essa diferença
 
 # Atualização
 
-A antiga versão havia falhas em relação ao desempenho e ao valor final da conta. Essa apresenta um desempenho 300x maior que a versão feita em numba e numpy.
+A antiga versão havia falhas em relação ao desempenho e ao valor final da conta.
