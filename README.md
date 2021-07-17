@@ -5,7 +5,7 @@ Color_Difference é um mini projeto que eu fiz utilizando Python para calcular o
 # Como Usar
 
 ```python
-from color_difference import olor_diff
+from color_difference import color_diff
 
 cor_1 = (9, 2, 0)
 
