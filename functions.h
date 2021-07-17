@@ -1,8 +1,8 @@
 // SDL_player - 2021
 
-const double pi = 3.141592653589793;
-const double e = 216.0 / 24389.0;
-const double k =  24389.0 / 27.0;
+#define pi 3.141592653589793;
+#define e 216.0 / 24389.0;
+#define k 24389.0 / 27.0;
 
 double radians(double deg);
 
