@@ -1,4 +1,4 @@
-
+// SDL_player - 2021
 
 const double pi = 3.141592653589793;
 const double e = 216.0 / 24389.0;
