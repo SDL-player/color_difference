@@ -18,8 +18,12 @@ result = diff.calculate()
 
 # Conversões
 
-Devido ao fato de que o Delta E utiliza valores em formato Lab para calcular, foi necessário realizar essas conversões: RGB -> SRGB -> SRGB Linear -> XYZ -> Lab. Para acelerá-las, utilizei Numpy e Numba.
+Devido ao fato de que o Delta E utiliza valores em formato Lab para calcular, foi necessário realizar essas conversões: RGB -> SRGB -> SRGB Linear -> XYZ -> Lab. Para acelerá-las, utilizei C.
 
 # Objetivo
 
 Apresentar uma opção mais rápida e simplificada para calcular essa diferença em Python.
+
+# Atualização
+
+A antiga versão havia falhas em relação ao desempenho e ao valor final da conta. Essa apresenta um desempenho 300x maior que a versão feita em numba e numpy.
