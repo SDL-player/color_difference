@@ -13,39 +13,31 @@ xyz2Lab = functions.xyz_to_lab
 delta_cie_2000_ = functions.delta_e_cie2000_
 
 delta_cie_2000_.restype = c_double
-
-
-class Color_Diff:
+        
+def color_diff(a, b):
     
-    def __init__(self, a, b):
+    """Calculate the delta_cie_2000 between two values in rgb format."""
         
-        """Calculate the delta_cie_2000 between two values in rgb format."""
+    arr_ = (c_double * len(self.a))(*self.a)
         
-        self.a = a
-        self.b = b
+    rgb2srgb(arr_)
         
-    def calculate(self):
+    srgb2linear(arr_)
         
-        arr_ = (c_double * len(self.a))(*self.a)
+    linear2xyz(arr_)
         
-        rgb2srgb(arr_)
+    xyz2Lab(arr_)
         
-        srgb2linear(arr_)
+    arr_2 = (c_double * len(self.b))(*self.b)
         
-        linear2xyz(arr_)
+    rgb2srgb(arr_2)
         
-        xyz2Lab(arr_)
+    srgb2linear(arr_2)
         
-        arr_2 = (c_double * len(self.b))(*self.b)
+    linear2xyz(arr_2)
         
-        rgb2srgb(arr_2)
+    xyz2Lab(arr_2)
         
-        srgb2linear(arr_2)
+    delta = delta_cie_2000_(arr_, arr_2)
         
-        linear2xyz(arr_2)
-        
-        xyz2Lab(arr_2)
-        
-        delta = delta_cie_2000_(arr_, arr_2)
-        
-        return delta
+    return delta
