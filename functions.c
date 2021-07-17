@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <math.h>
 
-#define pi 3.141592653589793;
-#define e 216.0 / 24389.0;
-#define k 24389.0 / 27.0;
+#define pi 3.141592653589793
+#define e 216.0 / 24389.0
+#define k 24389.0 / 27.0
 
 double radians(double deg){
 
